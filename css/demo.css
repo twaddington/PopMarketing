@@ -1,0 +1,47 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    color: #222;
+    font-family: 'Helvetica Neue', Helvetica, Verdana, sans-serif;
+    background-color: #dcdcdc;
+    overflow: hidden;
+}
+
+.wrap {
+    width: 520px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.show {
+    display: none;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 36px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+ul {
+    margin: 20px;
+    padding: 0px;
+    font-size: 16px;
+    list-style-type: square;
+}
+
+li {
+    margin: 0px 0px 10px 20px;
+    line-height: 1em;
+    list-style-type: inherit;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Tristan Waddington" />
+
+        <title>PopMarketing Demo</title>
+
+        <!-- Demo Stylesheet -->
+        <link rel="stylesheet" href="../css/demo.css" type="text/css" media="all">
+        
+        <!-- Requires jQuery and easing.js -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="../js/jquery.popmarketing.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('body').popmarketing({
+                    'width': 600,       // Width of image asset
+                    'height': 500,      // Height of image asset
+                    'delay': 1500,      // Delay before showing overlay
+                    'useCookie': false, // Don't set a cookie so the demo is repeatable
+                    'image': '../images/trap.png',
+                    'target': 'http://www.youtube.com/watch?v=dddAi8FF3F4',
+                    'hiddenOffset': 100,
+                    'easeInCallback': function() {
+                        $('.show').show();
+                    }
+                }); 
+            });
+        </script>
+    </head>
+    <body>
+        <div id="content">
+            <div class="wrap">
+                <h1>Wait for it...</h1>
+                <ul class="show">
+                    <li>Click anywhere on the page to dismiss the overlay.</li>
+                    <li>Click the overlay to follow the link.</li>
+                    <li>If the overlay has no link target set, clicking on the overlay will dismiss it.</li>
+                    <li>Try resizing your browser.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- end #content -->
+    </body>
+</html>
