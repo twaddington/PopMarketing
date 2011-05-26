@@ -18,16 +18,11 @@ Use the PopMarketing overlay by calling it on the body element like so:
 
             $(document).ready(function() {
                 $('body').popmarketing({
-                    'width': 600,       // Width of image asset
-                    'height': 500,      // Height of image asset
-                    'delay': 1500,      // Delay before showing overlay
-                    'useCookie': false, // Don't set a cookie so the demo is repeatable
-                    'image': '../images/trap.png',
-                    'target': 'http://www.youtube.com/watch?v=dddAi8FF3F4',
-                    'hiddenOffset': 100,
-                    'easeInCallback': function() {
-                        $('.show').show();
-                    }
+                    'width': 600,                      // Width of image asset
+                    'height': 500,                     // Height of image asset
+                    'delay': 1500,                     // Delay before showing overlay
+                    'image': '../images/trap.png',     // The image asset to use
+                    'target': 'http://www.google.com/' // Where to send people who click the overlay
                 }); 
             });
 
@@ -59,7 +54,7 @@ You can pass in extra parameters to control certain aspects of PopMarketing like
 
 Mobile browsers
 ---------------
-I haven't tested the overlay on mobile devices and honestly, I would not recommend
+I haven't tested the overlay on mobile devices and, honestly, I would not recommend
 using it on small screens. It's really designed for desktop users.
 
 You can disable the overlay on mobile browsers by detecting mobile specific events:
@@ -68,16 +63,11 @@ You can disable the overlay on mobile browsers by detecting mobile specific even
                 // Only show the overlay if the onorientationchange event is undefined
                 if (typeof window.onorientationchange === 'undefined') { 
                     $('body').popmarketing({
-                        'width': 600,       // Width of image asset
-                        'height': 500,      // Height of image asset
-                        'delay': 1500,      // Delay before showing overlay
-                        'useCookie': false, // Don't set a cookie so the demo is repeatable
-                        'image': '../images/trap.png',
-                        'target': 'http://www.youtube.com/watch?v=dddAi8FF3F4',
-                        'hiddenOffset': 100,
-                        'easeInCallback': function() {
-                            $('.show').show();
-                        }
-                    });
+                        'width': 600,                      // Width of image asset
+                        'height': 500,                     // Height of image asset
+                        'delay': 1500,                     // Delay before showing overlay
+                        'image': '../images/trap.png',     // The image asset to use
+                        'target': 'http://www.google.com/' // Where to send people who click the overlay
+                    }); 
                 }
             });
